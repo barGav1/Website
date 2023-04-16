@@ -1,0 +1,60 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #F0F0F0;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 20px;
+}
+
+.container.intro {
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding-top: 50px;
+}
+
+#intro {
+	margin-bottom: 50px;
+}
+
+#intro img {
+	border-radius: 50%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#python, #sql, #tableau {
+	flex-basis: 300px;
+	margin-bottom: 20px;
+	background-color: #FFFFFF;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+	transition: box-shadow 0.3s ease-in-out;
+}
+
+#python:hover, #sql:hover, #excel:hover {
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#python h2, #sql h2, #excel h2 {
+	margin: 20px;
+	font-size: 24px;
+}
+
+#python p, #sql p, #excel p {
+	margin: 20px;
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+.intro-desc {
+	max-width: 600px;
+	margin-bottom: 20px;
+	font-size: 20px;
+	line-height: 1.5;
+}
